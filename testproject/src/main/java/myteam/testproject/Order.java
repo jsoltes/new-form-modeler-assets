@@ -5,31 +5,48 @@ package myteam.testproject;
  */
 
 @javax.persistence.Entity
-public class Order implements java.io.Serializable {
+public class Order implements java.io.Serializable
+{
 
-    static final long serialVersionUID = 1L;
+   static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "ORDER_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "ORDER_ID_SEQ", name = "ORDER_ID_GENERATOR")
-    private java.lang.Long id;
+   @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "ORDER_ID_GENERATOR")
+   @javax.persistence.Id
+   @javax.persistence.SequenceGenerator(sequenceName = "ORDER_ID_SEQ", name = "ORDER_ID_GENERATOR")
+   private java.lang.Long id;
 
-    public Order() {
-    }
-    
-    public Order(java.lang.Long id) {
-        this.id = id;
-    }
+   @javax.persistence.ManyToOne(cascade = { javax.persistence.CascadeType.ALL }, fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "person")
+   private myteam.testproject.Person person;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+   public Order()
+   {
+   }
 
+   public java.lang.Long getId()
+   {
+      return this.id;
+   }
 
+   public void setId(java.lang.Long id)
+   {
+      this.id = id;
+   }
 
+   public myteam.testproject.Person getPerson()
+   {
+      return this.person;
+   }
+
+   public void setPerson(myteam.testproject.Person person)
+   {
+      this.person = person;
+   }
+
+   public Order(java.lang.Long id, myteam.testproject.Person person)
+   {
+      this.id = id;
+      this.person = person;
+   }
 
 }
