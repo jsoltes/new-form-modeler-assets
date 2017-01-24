@@ -1,0 +1,1 @@
+{"id":"393d8daa-2e4d-4a7a-881a-b4e0da9fec03","name":"Person","model":{"className":"myteam.testproject.Person","name":"person","formModelType":"org.kie.workbench.common.forms.data.modeller.model.DataObjectFormModel"},"fields":[]}
