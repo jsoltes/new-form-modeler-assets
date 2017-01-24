@@ -1,9 +1,0 @@
-package myteam.testproject;
-
-import java.lang.Number;
-
-rule "gr"
-	dialect "mvel"
-	when
-	then
-end
