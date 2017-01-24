@@ -1,0 +1,1 @@
+{"id":"d4da273d-a300-4391-b9c4-d4fd6d7c3157","name":"Order-form","model":{"className":"myteam.testproject.Order","name":"order","formModelType":"org.kie.workbench.common.forms.data.modeller.model.DataObjectFormModel"},"fields":[]}
