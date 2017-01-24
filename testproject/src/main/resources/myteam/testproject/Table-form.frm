@@ -1,0 +1,1 @@
+{"id":"246c0fd8-9c00-4fe2-87f7-599c7e018f3b","name":"Table-form","model":{"className":"myteam.testproject.Table","name":"table","formModelType":"org.kie.workbench.common.forms.data.modeller.model.DataObjectFormModel"},"fields":[]}
