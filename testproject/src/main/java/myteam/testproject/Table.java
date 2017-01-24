@@ -5,31 +5,49 @@ package myteam.testproject;
  */
 
 @javax.persistence.Entity
-public class Table implements java.io.Serializable {
+public class Table implements java.io.Serializable
+{
 
-    static final long serialVersionUID = 1L;
+   static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TABLE_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "TABLE_ID_SEQ", name = "TABLE_ID_GENERATOR")
-    private java.lang.Long id;
+   @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TABLE_ID_GENERATOR")
+   @javax.persistence.Id
+   @javax.persistence.SequenceGenerator(sequenceName = "TABLE_ID_SEQ", name = "TABLE_ID_GENERATOR")
+   private java.lang.Long id;
 
-    public Table() {
-    }
-    
-    public Table(java.lang.Long id) {
-        this.id = id;
-    }
+   @javax.persistence.OneToMany(cascade = { javax.persistence.CascadeType.ALL }, fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "people")
+   private java.util.List<myteam.testproject.Person> people;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+   public Table()
+   {
+   }
 
+   public java.lang.Long getId()
+   {
+      return this.id;
+   }
 
+   public void setId(java.lang.Long id)
+   {
+      this.id = id;
+   }
 
+   public java.util.List<myteam.testproject.Person> getPeople()
+   {
+      return this.people;
+   }
+
+   public void setPeople(java.util.List<myteam.testproject.Person> people)
+   {
+      this.people = people;
+   }
+
+   public Table(java.lang.Long id,
+         java.util.List<myteam.testproject.Person> people)
+   {
+      this.id = id;
+      this.people = people;
+   }
 
 }
