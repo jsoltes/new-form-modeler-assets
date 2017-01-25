@@ -5,31 +5,296 @@ package myteam.testproject;
  */
 
 @javax.persistence.Entity
-public class Lists implements java.io.Serializable {
+public class Lists implements java.io.Serializable
+{
 
-    static final long serialVersionUID = 1L;
+   static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "LISTS_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "LISTS_ID_SEQ", name = "LISTS_ID_GENERATOR")
-    private java.lang.Long id;
+   @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "LISTS_ID_GENERATOR")
+   @javax.persistence.Id
+   @javax.persistence.SequenceGenerator(sequenceName = "LISTS_ID_SEQ", name = "LISTS_ID_GENERATOR")
+   private java.lang.Long id;
 
-    public Lists() {
-    }
-    
-    public Lists(java.lang.Long id) {
-        this.id = id;
-    }
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "big decimal list")
+   private java.util.List<java.math.BigDecimal> bigDecimalList;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "big integer list")
+   private java.util.List<java.math.BigInteger> bigIntegerList;
 
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "boolean list")
+   private java.util.List<java.lang.Boolean> booleanList;
 
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "byte list")
+   private java.util.List<java.lang.Byte> byteList;
 
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "character list")
+   private java.util.List<java.lang.Character> characterList;
+
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "date list")
+   private java.util.List<java.util.Date> dateList;
+
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "double list")
+   private java.util.List<java.lang.Double> doubleList;
+
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "float list")
+   private java.util.List<java.lang.Float> floatList;
+
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "integer list")
+   private java.util.List<java.lang.Integer> integerList;
+
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "local date list")
+   private java.util.List<java.time.LocalDate> localDateList;
+
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "local date time list")
+   private java.util.List<java.time.LocalDateTime> localDateTimeList;
+
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "local time list")
+   private java.util.List<java.time.LocalTime> localTimeList;
+
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "long list")
+   private java.util.List<java.lang.Long> longList;
+
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "offset date time list")
+   private java.util.List<java.time.OffsetDateTime> offsetDateTimeList;
+
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "short list")
+   private java.util.List<java.lang.Short> shortList;
+
+   @javax.persistence.ElementCollection(fetch = javax.persistence.FetchType.EAGER)
+   @org.kie.api.definition.type.Label(value = "string list")
+   private java.util.List<java.lang.String> stringList;
+
+   public Lists()
+   {
+   }
+
+   public java.lang.Long getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.Long id)
+   {
+      this.id = id;
+   }
+
+   public java.util.List<java.math.BigDecimal> getBigDecimalList()
+   {
+      return this.bigDecimalList;
+   }
+
+   public void setBigDecimalList(
+         java.util.List<java.math.BigDecimal> bigDecimalList)
+   {
+      this.bigDecimalList = bigDecimalList;
+   }
+
+   public java.util.List<java.math.BigInteger> getBigIntegerList()
+   {
+      return this.bigIntegerList;
+   }
+
+   public void setBigIntegerList(
+         java.util.List<java.math.BigInteger> bigIntegerList)
+   {
+      this.bigIntegerList = bigIntegerList;
+   }
+
+   public java.util.List<java.lang.Boolean> getBooleanList()
+   {
+      return this.booleanList;
+   }
+
+   public void setBooleanList(java.util.List<java.lang.Boolean> booleanList)
+   {
+      this.booleanList = booleanList;
+   }
+
+   public java.util.List<java.lang.Byte> getByteList()
+   {
+      return this.byteList;
+   }
+
+   public void setByteList(java.util.List<java.lang.Byte> byteList)
+   {
+      this.byteList = byteList;
+   }
+
+   public java.util.List<java.lang.Character> getCharacterList()
+   {
+      return this.characterList;
+   }
+
+   public void setCharacterList(
+         java.util.List<java.lang.Character> characterList)
+   {
+      this.characterList = characterList;
+   }
+
+   public java.util.List<java.util.Date> getDateList()
+   {
+      return this.dateList;
+   }
+
+   public void setDateList(java.util.List<java.util.Date> dateList)
+   {
+      this.dateList = dateList;
+   }
+
+   public java.util.List<java.lang.Double> getDoubleList()
+   {
+      return this.doubleList;
+   }
+
+   public void setDoubleList(java.util.List<java.lang.Double> doubleList)
+   {
+      this.doubleList = doubleList;
+   }
+
+   public java.util.List<java.lang.Float> getFloatList()
+   {
+      return this.floatList;
+   }
+
+   public void setFloatList(java.util.List<java.lang.Float> floatList)
+   {
+      this.floatList = floatList;
+   }
+
+   public java.util.List<java.lang.Integer> getIntegerList()
+   {
+      return this.integerList;
+   }
+
+   public void setIntegerList(java.util.List<java.lang.Integer> integerList)
+   {
+      this.integerList = integerList;
+   }
+
+   public java.util.List<java.time.LocalDate> getLocalDateList()
+   {
+      return this.localDateList;
+   }
+
+   public void setLocalDateList(
+         java.util.List<java.time.LocalDate> localDateList)
+   {
+      this.localDateList = localDateList;
+   }
+
+   public java.util.List<java.time.LocalDateTime> getLocalDateTimeList()
+   {
+      return this.localDateTimeList;
+   }
+
+   public void setLocalDateTimeList(
+         java.util.List<java.time.LocalDateTime> localDateTimeList)
+   {
+      this.localDateTimeList = localDateTimeList;
+   }
+
+   public java.util.List<java.time.LocalTime> getLocalTimeList()
+   {
+      return this.localTimeList;
+   }
+
+   public void setLocalTimeList(
+         java.util.List<java.time.LocalTime> localTimeList)
+   {
+      this.localTimeList = localTimeList;
+   }
+
+   public java.util.List<java.lang.Long> getLongList()
+   {
+      return this.longList;
+   }
+
+   public void setLongList(java.util.List<java.lang.Long> longList)
+   {
+      this.longList = longList;
+   }
+
+   public java.util.List<java.time.OffsetDateTime> getOffsetDateTimeList()
+   {
+      return this.offsetDateTimeList;
+   }
+
+   public void setOffsetDateTimeList(
+         java.util.List<java.time.OffsetDateTime> offsetDateTimeList)
+   {
+      this.offsetDateTimeList = offsetDateTimeList;
+   }
+
+   public java.util.List<java.lang.Short> getShortList()
+   {
+      return this.shortList;
+   }
+
+   public void setShortList(java.util.List<java.lang.Short> shortList)
+   {
+      this.shortList = shortList;
+   }
+
+   public java.util.List<java.lang.String> getStringList()
+   {
+      return this.stringList;
+   }
+
+   public void setStringList(java.util.List<java.lang.String> stringList)
+   {
+      this.stringList = stringList;
+   }
+
+   public Lists(java.lang.Long id,
+         java.util.List<java.math.BigDecimal> bigDecimalList,
+         java.util.List<java.math.BigInteger> bigIntegerList,
+         java.util.List<java.lang.Boolean> booleanList,
+         java.util.List<java.lang.Byte> byteList,
+         java.util.List<java.lang.Character> characterList,
+         java.util.List<java.util.Date> dateList,
+         java.util.List<java.lang.Double> doubleList,
+         java.util.List<java.lang.Float> floatList,
+         java.util.List<java.lang.Integer> integerList,
+         java.util.List<java.time.LocalDate> localDateList,
+         java.util.List<java.time.LocalDateTime> localDateTimeList,
+         java.util.List<java.time.LocalTime> localTimeList,
+         java.util.List<java.lang.Long> longList,
+         java.util.List<java.time.OffsetDateTime> offsetDateTimeList,
+         java.util.List<java.lang.Short> shortList,
+         java.util.List<java.lang.String> stringList)
+   {
+      this.id = id;
+      this.bigDecimalList = bigDecimalList;
+      this.bigIntegerList = bigIntegerList;
+      this.booleanList = booleanList;
+      this.byteList = byteList;
+      this.characterList = characterList;
+      this.dateList = dateList;
+      this.doubleList = doubleList;
+      this.floatList = floatList;
+      this.integerList = integerList;
+      this.localDateList = localDateList;
+      this.localDateTimeList = localDateTimeList;
+      this.localTimeList = localTimeList;
+      this.longList = longList;
+      this.offsetDateTimeList = offsetDateTimeList;
+      this.shortList = shortList;
+      this.stringList = stringList;
+   }
 
 }
