@@ -1,0 +1,188 @@
+
+<form id="1069036897">
+<property name="name" value="testproject.testprocess-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="order_id" type="InputTextLong" id="367193303">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="1" name="order_person" type="Subform" id="2102157734">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;person (order)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="order/person"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="2" name="table_id" type="InputTextLong" id="428910422">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (table)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="table/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="3" name="table_people" bag-type="myteam.testproject.Person" type="MultipleSubform" id="928585817">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;people (table)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="table/people"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="4" name="String" type="InputText" id="307095458">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;String (String)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="String"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="boolean" type="CheckBox" id="3772126">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;boolean (boolean)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="boolean"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="6" name="float" type="InputTextFloat" id="1090326010">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;float (float)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="float"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="7" name="integer" type="InputTextInteger" id="1305143553">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;integer (integer)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="integer"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="8" name="subform_bigDecimal" type="InputTextBigDecimal" id="1963430121">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;bigDecimal (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/bigDecimal"/>
+<property name="fieldClass" value="java.math.BigDecimal"/>
+</field>
+<field position="9" name="subform_bigInteger" type="InputTextBigInteger" id="1197486205">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;bigInteger (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/bigInteger"/>
+<property name="fieldClass" value="java.math.BigInteger"/>
+</field>
+<field position="10" name="subform_booleanField" type="CheckBox" id="457365602">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;booleanField (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/booleanField"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="11" name="subform_byteField" type="InputTextByte" id="344947057">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;byteField (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/byteField"/>
+<property name="fieldClass" value="java.lang.Byte"/>
+</field>
+<field position="12" name="subform_character" type="InputTextCharacter" id="255233051">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;character (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/character"/>
+<property name="fieldClass" value="java.lang.Character"/>
+</field>
+<field position="13" name="subform_date" type="InputDate" id="2143584802">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="14" name="subform_doubleField" type="InputTextDouble" id="944323690">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;doubleField (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/doubleField"/>
+<property name="fieldClass" value="java.lang.Double"/>
+</field>
+<field position="15" name="subform_floatField" type="InputTextFloat" id="1709760603">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;floatField (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/floatField"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="16" name="subform_id" type="InputTextLong" id="1536640700">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="17" name="subform_integer" type="InputTextInteger" id="625558423">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;integer (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/integer"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="18" name="subform_localDate" type="Subform" id="340862486">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;localDate (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/localDate"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="19" name="subform_localDateTime" type="Subform" id="351649848">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;localDateTime (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/localDateTime"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="20" name="subform_localTime" type="Subform" id="1646862016">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;localTime (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/localTime"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="21" name="subform_longField" type="InputTextLong" id="1588804521">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;longField (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/longField"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="22" name="subform_offsetDateTime" type="Subform" id="2109207278">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;offsetDateTime (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/offsetDateTime"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="23" name="subform_shortField" type="InputTextShort" id="2028469194">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;shortField (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/shortField"/>
+<property name="fieldClass" value="java.lang.Short"/>
+</field>
+<field position="24" name="subform_string" type="InputText" id="1483607188">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;string (subform)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="subform/string"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#FBB767" type="basicType" outId="String" value="java.lang.String" id="String"/>
+<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="boolean" value="java.lang.Boolean" id="boolean"/>
+<dataHolder inputId="" name="#B29FE4" type="basicType" outId="float" value="java.lang.Float" id="float"/>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="integer" value="java.lang.Integer" id="integer"/>
+<dataHolder inputId="" name="#FF54A7" type="dataModelerEntry" outId="order" value="myteam.testproject.Order" id="order"/>
+<dataHolder inputId="" name="#FF8881" type="dataModelerEntry" outId="subform" value="myteam.testproject.AllDataTypes" id="subform"/>
+<dataHolder inputId="" name="#E9E371" type="dataModelerEntry" outId="table" value="myteam.testproject.Table" id="table"/>
+</form>
