@@ -1,0 +1,1 @@
+{"id":"191b898b-e714-4275-ae26-d8f4f8e77216","name":"BasicTypes-form","model":{"className":"myteam.testproject.BasicTypes","name":"basicTypes","formModelType":"org.kie.workbench.common.forms.data.modeller.model.DataObjectFormModel"},"fields":[]}
