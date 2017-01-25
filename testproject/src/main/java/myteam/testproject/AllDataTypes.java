@@ -5,31 +5,266 @@ package myteam.testproject;
  */
 
 @javax.persistence.Entity
-public class AllDataTypes implements java.io.Serializable {
+public class AllDataTypes implements java.io.Serializable
+{
 
-    static final long serialVersionUID = 1L;
+   static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "ALLDATATYPES_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "ALLDATATYPES_ID_SEQ", name = "ALLDATATYPES_ID_GENERATOR")
-    private java.lang.Long id;
+   @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "ALLDATATYPES_ID_GENERATOR")
+   @javax.persistence.Id
+   @javax.persistence.SequenceGenerator(sequenceName = "ALLDATATYPES_ID_SEQ", name = "ALLDATATYPES_ID_GENERATOR")
+   private java.lang.Long id;
 
-    public AllDataTypes() {
-    }
-    
-    public AllDataTypes(java.lang.Long id) {
-        this.id = id;
-    }
+   @org.kie.api.definition.type.Label(value = "big decimal")
+   private java.math.BigDecimal bigDecimal;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+   @org.kie.api.definition.type.Label(value = "big integer")
+   private java.math.BigInteger bigInteger;
 
+   @org.kie.api.definition.type.Label(value = "boolean")
+   private java.lang.Boolean booleanField;
 
+   @org.kie.api.definition.type.Label(value = "byte")
+   private java.lang.Byte byteField;
 
+   @org.kie.api.definition.type.Label(value = "character")
+   private java.lang.Character character;
+
+   @org.kie.api.definition.type.Label(value = "date")
+   private java.util.Date date;
+
+   @org.kie.api.definition.type.Label(value = "double")
+   private java.lang.Double doubleField;
+
+   @org.kie.api.definition.type.Label(value = "float")
+   private java.lang.Float floatField;
+
+   @org.kie.api.definition.type.Label(value = "integer")
+   private java.lang.Integer integer;
+
+   @org.kie.api.definition.type.Label(value = "local date")
+   private java.time.LocalDate localDate;
+
+   @org.kie.api.definition.type.Label(value = "local date time")
+   private java.time.LocalDateTime localDateTime;
+
+   @org.kie.api.definition.type.Label(value = "local time")
+   private java.time.LocalTime localTime;
+
+   @org.kie.api.definition.type.Label(value = "long")
+   private java.lang.Long longField;
+
+   @org.kie.api.definition.type.Label(value = "offset date time")
+   private java.time.OffsetDateTime offsetDateTime;
+
+   @org.kie.api.definition.type.Label(value = "short")
+   private java.lang.Short shortField;
+
+   @org.kie.api.definition.type.Label(value = "string")
+   private java.lang.String string;
+
+   public AllDataTypes()
+   {
+   }
+
+   public java.lang.Long getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.Long id)
+   {
+      this.id = id;
+   }
+
+   public java.math.BigDecimal getBigDecimal()
+   {
+      return this.bigDecimal;
+   }
+
+   public void setBigDecimal(java.math.BigDecimal bigDecimal)
+   {
+      this.bigDecimal = bigDecimal;
+   }
+
+   public java.math.BigInteger getBigInteger()
+   {
+      return this.bigInteger;
+   }
+
+   public void setBigInteger(java.math.BigInteger bigInteger)
+   {
+      this.bigInteger = bigInteger;
+   }
+
+   public java.lang.Boolean getBooleanField()
+   {
+      return this.booleanField;
+   }
+
+   public void setBooleanField(java.lang.Boolean booleanField)
+   {
+      this.booleanField = booleanField;
+   }
+
+   public java.lang.Byte getByteField()
+   {
+      return this.byteField;
+   }
+
+   public void setByteField(java.lang.Byte byteField)
+   {
+      this.byteField = byteField;
+   }
+
+   public java.lang.Character getCharacter()
+   {
+      return this.character;
+   }
+
+   public void setCharacter(java.lang.Character character)
+   {
+      this.character = character;
+   }
+
+   public java.util.Date getDate()
+   {
+      return this.date;
+   }
+
+   public void setDate(java.util.Date date)
+   {
+      this.date = date;
+   }
+
+   public java.lang.Double getDoubleField()
+   {
+      return this.doubleField;
+   }
+
+   public void setDoubleField(java.lang.Double doubleField)
+   {
+      this.doubleField = doubleField;
+   }
+
+   public java.lang.Float getFloatField()
+   {
+      return this.floatField;
+   }
+
+   public void setFloatField(java.lang.Float floatField)
+   {
+      this.floatField = floatField;
+   }
+
+   public java.lang.Integer getInteger()
+   {
+      return this.integer;
+   }
+
+   public void setInteger(java.lang.Integer integer)
+   {
+      this.integer = integer;
+   }
+
+   public java.time.LocalDate getLocalDate()
+   {
+      return this.localDate;
+   }
+
+   public void setLocalDate(java.time.LocalDate localDate)
+   {
+      this.localDate = localDate;
+   }
+
+   public java.time.LocalDateTime getLocalDateTime()
+   {
+      return this.localDateTime;
+   }
+
+   public void setLocalDateTime(java.time.LocalDateTime localDateTime)
+   {
+      this.localDateTime = localDateTime;
+   }
+
+   public java.time.LocalTime getLocalTime()
+   {
+      return this.localTime;
+   }
+
+   public void setLocalTime(java.time.LocalTime localTime)
+   {
+      this.localTime = localTime;
+   }
+
+   public java.lang.Long getLongField()
+   {
+      return this.longField;
+   }
+
+   public void setLongField(java.lang.Long longField)
+   {
+      this.longField = longField;
+   }
+
+   public java.time.OffsetDateTime getOffsetDateTime()
+   {
+      return this.offsetDateTime;
+   }
+
+   public void setOffsetDateTime(java.time.OffsetDateTime offsetDateTime)
+   {
+      this.offsetDateTime = offsetDateTime;
+   }
+
+   public java.lang.Short getShortField()
+   {
+      return this.shortField;
+   }
+
+   public void setShortField(java.lang.Short shortField)
+   {
+      this.shortField = shortField;
+   }
+
+   public java.lang.String getString()
+   {
+      return this.string;
+   }
+
+   public void setString(java.lang.String string)
+   {
+      this.string = string;
+   }
+
+   public AllDataTypes(java.lang.Long id, java.math.BigDecimal bigDecimal,
+         java.math.BigInteger bigInteger, java.lang.Boolean booleanField,
+         java.lang.Byte byteField, java.lang.Character character,
+         java.util.Date date, java.lang.Double doubleField,
+         java.lang.Float floatField, java.lang.Integer integer,
+         java.time.LocalDate localDate,
+         java.time.LocalDateTime localDateTime,
+         java.time.LocalTime localTime, java.lang.Long longField,
+         java.time.OffsetDateTime offsetDateTime,
+         java.lang.Short shortField, java.lang.String string)
+   {
+      this.id = id;
+      this.bigDecimal = bigDecimal;
+      this.bigInteger = bigInteger;
+      this.booleanField = booleanField;
+      this.byteField = byteField;
+      this.character = character;
+      this.date = date;
+      this.doubleField = doubleField;
+      this.floatField = floatField;
+      this.integer = integer;
+      this.localDate = localDate;
+      this.localDateTime = localDateTime;
+      this.localTime = localTime;
+      this.longField = longField;
+      this.offsetDateTime = offsetDateTime;
+      this.shortField = shortField;
+      this.string = string;
+   }
 
 }
