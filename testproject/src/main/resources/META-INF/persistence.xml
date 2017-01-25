@@ -6,6 +6,7 @@
         <class>myteam.testproject.Table</class>
         <class>myteam.testproject.Order</class>
         <class>myteam.testproject.Person</class>
+        <class>myteam.testproject.AllDataTypes</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
