@@ -5,31 +5,147 @@ package myteam.testproject;
  */
 
 @javax.persistence.Entity
-public class BasicTypes implements java.io.Serializable {
+public class BasicTypes implements java.io.Serializable
+{
 
-    static final long serialVersionUID = 1L;
+   static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "BASICTYPES_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(sequenceName = "BASICTYPES_ID_SEQ", name = "BASICTYPES_ID_GENERATOR")
-    private java.lang.Long id;
+   @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "BASICTYPES_ID_GENERATOR")
+   @javax.persistence.Id
+   @javax.persistence.SequenceGenerator(sequenceName = "BASICTYPES_ID_SEQ", name = "BASICTYPES_ID_GENERATOR")
+   private java.lang.Long id;
 
-    public BasicTypes() {
-    }
-    
-    public BasicTypes(java.lang.Long id) {
-        this.id = id;
-    }
+   @org.kie.api.definition.type.Label(value = "boolean field")
+   private boolean booleanField;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+   @org.kie.api.definition.type.Label(value = "byte field")
+   private byte byteField;
 
+   @org.kie.api.definition.type.Label(value = "char field")
+   private char charField;
 
+   @org.kie.api.definition.type.Label(value = "double field")
+   private double doubleField;
 
+   @org.kie.api.definition.type.Label(value = "float field")
+   private float floatField;
+
+   @org.kie.api.definition.type.Label(value = "int field")
+   private int intField;
+
+   @org.kie.api.definition.type.Label(value = "long field")
+   private long longField;
+
+   @org.kie.api.definition.type.Label(value = "short field")
+   private short shortField;
+
+   public BasicTypes()
+   {
+   }
+
+   public java.lang.Long getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.Long id)
+   {
+      this.id = id;
+   }
+
+   public boolean isBooleanField()
+   {
+      return this.booleanField;
+   }
+
+   public void setBooleanField(boolean booleanField)
+   {
+      this.booleanField = booleanField;
+   }
+
+   public byte getByteField()
+   {
+      return this.byteField;
+   }
+
+   public void setByteField(byte byteField)
+   {
+      this.byteField = byteField;
+   }
+
+   public char getCharField()
+   {
+      return this.charField;
+   }
+
+   public void setCharField(char charField)
+   {
+      this.charField = charField;
+   }
+
+   public double getDoubleField()
+   {
+      return this.doubleField;
+   }
+
+   public void setDoubleField(double doubleField)
+   {
+      this.doubleField = doubleField;
+   }
+
+   public float getFloatField()
+   {
+      return this.floatField;
+   }
+
+   public void setFloatField(float floatField)
+   {
+      this.floatField = floatField;
+   }
+
+   public int getIntField()
+   {
+      return this.intField;
+   }
+
+   public void setIntField(int intField)
+   {
+      this.intField = intField;
+   }
+
+   public long getLongField()
+   {
+      return this.longField;
+   }
+
+   public void setLongField(long longField)
+   {
+      this.longField = longField;
+   }
+
+   public short getShortField()
+   {
+      return this.shortField;
+   }
+
+   public void setShortField(short shortField)
+   {
+      this.shortField = shortField;
+   }
+
+   public BasicTypes(java.lang.Long id, boolean booleanField, byte byteField,
+         char charField, double doubleField, float floatField, int intField,
+         long longField, short shortField)
+   {
+      this.id = id;
+      this.booleanField = booleanField;
+      this.byteField = byteField;
+      this.charField = charField;
+      this.doubleField = doubleField;
+      this.floatField = floatField;
+      this.intField = intField;
+      this.longField = longField;
+      this.shortField = shortField;
+   }
 
 }
