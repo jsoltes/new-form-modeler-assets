@@ -8,6 +8,7 @@
         <class>myteam.testproject.Person</class>
         <class>myteam.testproject.AllDataTypes</class>
         <class>myteam.testproject.Lists</class>
+        <class>myteam.testproject.BasicTypes</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
