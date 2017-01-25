@@ -1,0 +1,1 @@
+{"id":"3368296a-ccb5-4cf1-96eb-be056f102b0c","name":"AllDataTypes-form","model":{"className":"myteam.testproject.AllDataTypes","name":"allDataTypes","formModelType":"org.kie.workbench.common.forms.data.modeller.model.DataObjectFormModel"},"fields":[]}
