@@ -1,0 +1,1 @@
+{"id":"8e26c77c-ee60-42d4-ae46-c937d0d8829f","name":"Lists-form","model":{"className":"myteam.testproject.Lists","name":"lists","formModelType":"org.kie.workbench.common.forms.data.modeller.model.DataObjectFormModel"},"fields":[]}
